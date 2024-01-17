@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchard Family Dentistry</title>
+    <link rel="icon" href="images/PHOTO-2024-01-16-11-57-04.jpg" type="image/x-icon">
+
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="style.css" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header">
+
+        <div class="header-top">
+            <div class="container">
+
+                <ul class="contact-list">
+
+                    <li class="contact-item">
+                        <ion-icon name="mail-outline"></ion-icon>
+
+                        <a href="mailto:info@example.com" class="contact-link">info@orchardfamilydentistry.ca
+
+                        </a>
+                    </li>
+
+                    <li class="contact-item">
+                        <ion-icon name="call-outline"></ion-icon>
+
+                        <a href="tel:+917052101786" class="contact-link">905-315-9937</a>
+                    </li>
+
+                </ul>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61553787269565" class="social-link"
+                            target="_blank">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/orchardfamdentistry/" class="social-link" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/home" class="social-link" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/company/orchardfamilydentistry/about/" class="social-link"
+                            target="_blank">
+                            <iconify-icon icon="ion:logo-linkedin"></iconify-icon>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="header-bottom" data-header>
+            <div class="container">
+
+                <a href="#" class="logo"><img src="images/PHOTO-2024-01-16-11-57-04.jpg" height="20px"
+                        width="140px" /></a>
+
+                <nav class="navbar container" data-navbar>
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+                        </li>
+
+                        <li>
+                            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <a href="#" class="btn">Book appointment</a>
+
+                <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                    <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+                    <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+                </button>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="section hero" id="home" style="background-image: url('data:image/jpeg;base64,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')"
+                aria-label="hero">
+                <div class="container">
+
+                    <div class="hero-content">
+
+
+
+                        <h1 class="h2 section-title text-center">A Burlington Tradition Of Trusted & Caring Dentistry
+                        </h1>
+
+                        <p class="hero-text">Welcome Weekdays Until 8pm & Weekends! We Bill Your Insurance Directly.</p>
+
+                        <form action="" class="hero-form">
+                            <input type="email" name="email_address" aria-label="email"
+                                placeholder="Your Email Address..." required class="email-field">
+
+                            <button type="submit" class="btn">Get Call Back</button>
+                        </form>
+
+                    </div>
+
+                    <figure class="hero-banner">
+                        <img src="https://frankforddentalcare.com/wp-content/uploads/what-is-the-definition-of-general-dentist.jpg" width="587" height="839" alt="hero banner" class="w-100">
+                    </figure>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #SERVICE
+      -->
+
+            <section class="section service" id="service" aria-label="service">
+                <div class="container">
+
+                    <p class="section-subtitle text-center">Our Services</p>
+
+                    <h2 class="h2 section-title text-center">One Office for All Your Dental Needs</h2>
+
+                    <ul class="service-list">
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/dental-crown-4332242-3610135.png?f=webp&w=128"
+                                        width="100" height="100" loading="lazy" alt="service icon" class="w-100">
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 card-title">Crowns</h3>
+
+                                    <p class="card-text">
+                                        Crowns cover &amp; support a tooth with a large filling when there isn't enough
+                                        tooth left.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/denture-9142547-7446809.png?f=webp&w=128"
+                                        width="100" height="100" loading="lazy" alt="service icon" class="w-100">
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 card-title">Dentures</h3>
+
+                                    <p class="card-text">
+                                        If you’ve lost teeth from decay, injury or periodontal (gum) disease, dentures
+                                        are the solution.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/implants-2-1169838.png?f=webp&w=128"
+                                        width="100" height="100" loading="lazy" alt="service icon" class="w-100">
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 card-title">Dental Implants</h3>
+
+                                    <p class="card-text">
+                                        Dental implants are man-made replacements for natural teeth & are essentially
+                                        permanent, attached teeth that replace partials, bridges, or dentures.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="service-banner">
+                            <figure>
+                                <img src="https://codewithsadee.github.io/dentelo/assets/images/service-banner.png"
+                                    width="409" height="467" loading="lazy" alt="service banner" class="w-100">
+                            </figure>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/tooth-germs-7199996-5858567.png?f=webp&w=128"
+                                        width="100" height="100" loading="lazy" alt="service icon" class="w-100">
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 card-title">Tooth-Coloured Dentistry</h3>
+
+                                    <p class="card-text">
+                                        Modern tooth-coloured fillings made of durable resin or porcelain can be bonded
+                                        to your teeth for a stronger & more natural-looking effect.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/dental-veneers-5648421-4721311.png?f=webp&w=128"
+                                        width="100" height="100" loading="lazy" alt="service icon" class="w-100">
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 card-title">Porcelain Veneers</h3>
+
+                                    <p class="card-text">
+                                        Excellent alternative to crowns & can perfect your smile by masking stains,
+                                        hiding chips, correcting misalignment & creating uniformity.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <div class="card-icon">
+                                    <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/clean-teeth-5425713-4527154.png?f=webp&w=128"
+                                        width="100" height="100" loading="lazy" alt="service icon" class="w-100">
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 card-title">Teeth Whitening</h3>
+
+                                    <p class="card-text">
+                                        Now you can have significantly whiter teeth in a matter of a few days using
+                                        advanced teeth whitening techniques.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="section about" id="about" aria-label="about">
+                <div class="container">
+
+                    <figure class="about-banner">
+                        <img src="https://media.istockphoto.com/id/1349328691/photo/young-happy-woman-during-dental-procedure-at-dentists-office.jpg?s=612x612&w=0&k=20&c=H0WBvMhyspSX10Xq65AFhF4DoMLzg8wOpqjjupwTWDE=" width="470" height="538" loading="lazy" alt="about banner" class="w-100">
+                    </figure>
+
+                    <div class="about-content">
+
+                        <p class="section-subtitle">About Us</p>
+
+                        <h2 class="h2 section-title">Trusted, Personalized & Affordable Family Dentistry</h2>
+
+                        <p class="section-text section-text-1">
+                            At Orchard Family Dentistry, our dedicated team strives to deliver convenient,
+                            personalized care for your whole family. As your comprehensive dental solution,
+                            we prioritize your health through safe, modern dentistry.
+                            Affordable care is our commitment to all—enjoy a cleaning and
+                            polishing for just $99*, regardless of insurance.
+                            *Includes 2 units scaling, 2 Bitewing x-rays, and exam.
+                        </p>
+
+                        <p class="section-text">
+
+                        </p>
+
+                        <a href="#" class="btn">Read more</a>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #DOCTOR
+      -->
+            <section class="section doctor" aria-label="doctor">
+                <div class="container">
+
+                    <p class="section-subtitle text-center">Our Doctor</p>
+
+                    <h2 class="h2 section-title text-center">Best Expert Dentist</h2>
+
+                    <ul class="has-scrollbar">
+
+                        <li class="scrollbar-item">
+                            <div class="doctor-card" style="width: 430px;">
+
+                                <div class="card-banner img-holder">
+                                    <img src="images/DavidHu.ba7255be852952a54b6a.jpg" loading="lazy"
+                                        alt="Ella Thompson" class="img-cover">
+                                </div>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Dr. David Hu</a>
+                                </h3>
+
+                                <p class="card-subtitle">Dentist</p>
+                                <p class="card-subtitle" style="color: black; line-height: 30px;">Dr. David Hu completed
+                                    his Bachelor's of Health Sciences at McMaster University before obtaining his Doctor
+                                    of Dental Surgery degree at the University of Toronto. He enjoys helping patients
+                                    feel more confident in their smiles and overall oral health by providing the best
+                                    possible care for them. He has an affinity for cosmetic and aesthetic dentistry,
+                                    Invisalign treatment, and impacted wisdom teeth extractions. Dr. Hu likes to spend
+                                    his free time playing basketball, doing street photography, or painting</p>
+
+                                <ul class="card-social-list">
+                                    <li>
+                                        <a href="#" class="card-social-link">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="card-social-link">
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="card-social-link">
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="doctor-card" style="width: 430px;">
+
+                                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                                    <img src="images/DLing.a229f8013b8307c430c9.jpg" width="460" height="500"
+                                        loading="lazy" alt="Danielle Bryant" class="img-cover">
+                                </div>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Danielle Bryant</a>
+                                </h3>
+
+                                <p class="card-subtitle">Dentist</p>
+                                <p class="card-subtitle" style="color: black; line-height: 30px;">Dr. Dominic Ling
+                                    initially studied biochemistry and chemical engineering at the University of Ottawa
+                                    before relocating to Toronto in 2017 to begin his Doctor of Dental Surgery degree at
+                                    the University of Toronto. After graduating, Dr. Ling moved to Northern Ontario,
+                                    where he provided dental care to underserved communities. While working up north, he
+                                    became proficient in saving severely compromised teeth with root canals,
+                                    restorations and crowns, doing full mouth extractions, and working with anxious
+                                    patients unfamiliar with the dental setting. Growing up, Dr. Ling spent a lot of
+                                    time working as a tutor or a teaching assistant, so teaching others is something
+                                    he's used to. He believes the best treatment is provided when patients understand
+                                    their oral health and can make informed decisions about their treatment. In his
+                                    spare time, he enjoys hanging out with friends and family, going to the gym,
+                                    listening to live music, and watching anime</p>
+
+                                <ul class="card-social-list">
+                                    <li>
+                                        <a href="#" class="card-social-link">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="card-social-link">
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="card-social-link">
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <!-- 
+        - #CTA
+      -->
+
+
+
+
+
+
+
+            <!-- 
+        - #BLOG
+      -->
+
+            <section class="section blog" id="blog" aria-label="blog">
+                <div class="container">
+
+                    <p class="section-subtitle text-center">Our Blog</p>
+
+                    <h2 class="h2 section-title text-center">Latest Blog & News</h2>
+
+                    <ul class="blog-list">
+
+                        <li>
+
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                                    <img src="https://img.dentistryiq.com/files/base/ebm/diq/image/2023/01/16x9/smile.63d8022687715.png?auto=format,compress&fit=fill&fill-color=white&h=556&w=1000&q=45"
+                                        width="1180" height="800" loading="lazy"
+                                        alt="Success in 7 Minutes: Electric vs. manual toothbrushes." class="img-cover">
+
+                                    <div class="card-badge">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+
+                                        <time class="time" datetime="2022-03-24">June 30, 2021</time>
+                                    </div>
+                                </figure>
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                        <a href="https://www.dentistryiq.com/dentistry/video/14206065/success-in-7-minutes-electric-vs-manual-toothbrushes"
+                                            class="card-title">Cras accumsan nulla nec lacus ultricies placerat.</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Drs. Pamela Maragliano-Muniz and Howard Glazer discuss the age-old question of
+                                        electric versus manual toothbrushes, the ins and outs of both types, and some
+                                        take-home points you can use in your own practice.
+
+                                    </p>
+
+                                    <a href="https://www.dentistryiq.com/dentistry/video/14206065/success-in-7-minutes-electric-vs-manual-toothbrushes"
+                                        class="card-link" target="_blank">Read More</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                                    <img src="https://img.dentistryiq.com/files/base/ebm/diq/image/2023/12/657a28627fb021001ecaa4d8-dreamstime_xxl_201355878.png?auto=format,compress&fit=crop&h=556&w=1000&q=45"
+                                        width="1180" height="800" loading="lazy"
+                                        alt="Illnesses and toothbrushes: The effects of bacteria and ways to stay healthy."
+                                        class="img-cover">
+
+                                    <div class="card-badge">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+
+                                        <time class="time" datetime="2022-03-24">Dec. 13, 2023</time>
+                                    </div>
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                        <a href="https://www.dentistryiq.com/dentistry/products/infection-control-and-instrument-management/article/14302743/illnesses-and-toothbrushes-the-effects-of-bacteria-and-ways-to-stay-healthy"
+                                            target="_blank" class="card-title">Illnesses and toothbrushes: The effects
+                                            of
+                                            bacteria and ways to stay healthy</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Wintertime brings colds, flu, and other illnesses. While the ways to keep
+                                        toothbrushes clean are still debated, there are some general guidelines you can
+                                        share with patients.
+                                    </p>
+
+                                    <a href="https://www.dentistryiq.com/dentistry/products/infection-control-and-instrument-management/article/14302743/illnesses-and-toothbrushes-the-effects-of-bacteria-and-ways-to-stay-healthy"
+                                        target="_blank" class="card-link">Read More</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                                    <img src="https://img.dentistryiq.com/files/base/ebm/diq/image/2023/12/65806603bc98f6001d5f2fe6-dreamstime_xxl_170871858.png?auto=format,compress&fit=crop&h=556&w=1000&q=45"
+                                        width="1180" height="800" loading="lazy"
+                                        alt="The surprising dental habits of Vikings." class="img-cover">
+
+                                    <div class="card-badge">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+
+                                        <time class="time" datetime="2022-03-24">Dec. 18, 2023
+                                        </time>
+                                    </div>
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                        <a href="https://www.dentistryiq.com/dentistry/article/14302864/good-read-the-surprising-dental-habits-of-vikings"
+                                            target="_blank" class="card-title">The surprising dental habits of
+                                            Vikings.</a>
+                                    </h3>
+
+                                    <p class="card-text">
+                                        Learn what researchers have found that indicated surprisingly advanced dentistry
+                                        for Vikings in Sweden more than a thousand years ago.
+                                    </p>
+
+                                    <a href="https://www.dentistryiq.com/dentistry/article/14302864/good-read-the-surprising-dental-habits-of-vikings"
+                                        target="_blank" class="card-link">Read More</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+
+        <div class="footer-top section">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">Orchard Family Dentistry.</a>
+
+                    <p class="footer-text">
+                     
+                    </p>
+
+                    <div class="schedule">
+                        <div class="schedule-icon">
+                            <iconify-icon icon="material-symbols:reviews"></iconify-icon>
+                        </div>
+                    <a href=" https://www.google.com/maps/place/Orchard+Family+Dentistry/@43.4118749,-79.8012806,15z/data=!4m6!3m5!1s0x882b67be02fcfd19:0x7c49a6904f7372e3!8m2!3d43.4118749!4d-79.8012806!16s%2Fg%2F11h3ddtzby?entry=ttu" target="_blank">
+                        <span class="span">
+                            Reviews: 4.9 <iconify-icon icon="teenyicons:star-solid" style="color: yellow;"></iconify-icon>
+                            <iconify-icon icon="teenyicons:star-solid" style="color: yellow;"></iconify-icon>
+                            <iconify-icon icon="teenyicons:star-solid" style="color: yellow;"></iconify-icon>
+                            <iconify-icon icon="teenyicons:star-solid" style="color: yellow;"></iconify-icon>
+
+                            
+                        </span>
+                    </a>
+                    </div>
+
+                    <div class="schedule">
+                        <div class="schedule-icon">
+                            <ion-icon name="time-outline"></ion-icon>
+                        </div>
+
+                        <span class="span">
+                            Monday - Saturday:<br>
+                            10:00am - 8:00Pm
+                        </span>
+                    </div>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Other Links</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">About Us</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Services</span>
+                        </a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Project</span>
+                        </a>
+                    </li> -->
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Our Team</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Latest Blog</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Our Services</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Root Canal</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Alignment Teeth</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Cosmetic Teeth</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Oral Hygiene</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Live Advisory</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="add-outline"></ion-icon>
+
+                            <span class="span">Cavity Inspection</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contact Us</p>
+                    </li>
+
+                    <li class="footer-item">
+                        <div class="item-icon">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <address class="item-text">
+                            5220 Dundas St #6<br>
+                            Burlington, ON L7L 0J4
+                            <a href="https://www.google.com/maps/place/Orchard+Family+Dentistry/@43.4118749,-79.8012806,15z/data=!4m6!3m5!1s0x882b67be02fcfd19:0x7c49a6904f7372e3!8m2!3d43.4118749!4d-79.8012806!16s%2Fg%2F11h3ddtzby?entry=ttu"
+                                target="_blank"> <img src="images/map.2b7150e7821940b1c5c4.png" width="280px"></a>
+
+                        </address>
+                    </li>
+
+                    <li class="footer-item">
+                        <div class="item-icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+
+                        <a href="tel:+917052101786" class="footer-link">905-315-9937</a>
+                    </li>
+
+                    <li class="footer-item">
+                        <div class="item-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <a href="mailto:help@example.com" class="footer-link">info@orchardfamilydentistry.ca</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2022 All Rights Reserved by codewithsadee.
+                </p>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61553787269565" target="_blank"
+                            class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/orchardfamdentistry/" target="_blank" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/home" target="_blank" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/orchardfamilydentistry/" target="_blank" class="social-link">
+                            <iconify-icon icon="ion:logo-linkedin"></iconify-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="main.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>
