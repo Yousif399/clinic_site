@@ -58,3 +58,13 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+// Togle contact Form
+function toggleContact() {
+    const toggleContact = document.querySelector(".toggleContact")
+    const contactMenu = document.querySelector(".contactMenu")
+    toggleContact.classList.toggle("c-active")
+    contactMenu.classList.toggle("c-active")
+}
+
+document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Orchard Family Dentistry. All rights reserved.";
