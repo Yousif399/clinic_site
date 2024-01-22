@@ -67,4 +67,24 @@ function toggleContact() {
     contactMenu.classList.toggle("c-active")
 }
 
+// select hous functions
+
+for (let i = 9; i <= 17; i++) {
+  const amPm = i < 12 ? 'am' : 'pm';
+  const hour = i % 12 || 12;
+  const optionText = `${hour}:00 ${amPm}`
+  
+  const selectHour = document.getElementById('selectHour');
+
+  const option = document.createElement('option');
+  option.value = i % 5;
+  option.text = optionText
+  selectHour.appendChild(option)
+}
+
+
+
+
+
+// footer copy right 
 document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Orchard Family Dentistry. All rights reserved.";

@@ -10,6 +10,7 @@
     <link rel="icon" href="images/PHOTO-2024-01-16-11-57-04.jpg" type="image/x-icon">
 
 
+
     <!-- 
       - favicon
     -->
@@ -99,23 +100,60 @@
         <div class="header-bottom active" data-header="">
             <div class="container">
 
-                <a href="#" class="logo"><img class="logo-img" style="border-radius: 0px; transform: scale(1.4);"
+                <a href="index.html" class="logo"><img class="logo-img" style="border-radius: 0px; transform: scale(1.4);"
                         src="https://ci3.googleusercontent.com/mail-sig/AIorK4wmP8Ew10EiMO84E1RjuJXz6IdUW4jM3-TzEjittpLSPB3mPDa68h_24kyNauQ9cZDXOIDeGk0"
-                        width="68px" /></a>.</a>
+                        width="68px" />
 
                 <nav class="navbar container" data-navbar="">
                     <ul class="navbar-list">
 
                         <li>
-                            <a href="#home" class="navbar-link" data-nav-link="">Home</a>
+                            <a href="index.html" class="navbar-link" data-nav-link="">Home</a>
+                        </li>
+                        
+
+                        <li>
+                            <a href="new.html" class="navbar-link" data-nav-link="">Services</a>
                         </li>
 
                         <li>
-                            <a href="#service" class="navbar-link" data-nav-link="">Services</a>
+             
+                            <a href="patientinfo.html"  class="navbar-link " data-nav-link="">Patient Informaion ⬇ </a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="scheduling.html" class="navbar-link" data-nav-link="">Scedualing</a>
+                                </li>
+
+                                <li>
+                                    <a href="student.html" class="navbar-link" data-nav-link="">student discount</a>
+                                </li>
+
+                                <li>
+                                    <a  class="navbar-link" data-nav-link="">patient education ➡</a>
+                                    <ul class="dropdown1">
+                                    <li>
+                                        <a href="digital.html" class="navbar-link" data-nav-link="">Digital X-Ray</a>
+                                    </li>
+                                    <li>
+                                        <a href="intraoral.html" class="navbar-link" data-nav-link="">Intraoral Camera</a>
+                                    </li>
+                                    <li>
+                                        <a href="localanesthesia.html" class="navbar-link" data-nav-link="">Local Anesthesia</a>
+                                    </li>
+                                    <li>
+                                        <a href="safety.html" class="navbar-link" data-nav-link="">Patient Safety</a>
+                                    </li>
+                                    <li>
+                                        <a href="tooth.html" class="navbar-link" data-nav-link="">Tooth Decay</a>
+                                    </li>
+                                </ul>
+                                </li>
+
+                            </ul>
                         </li>
 
                         <li>
-                            <a href="#about" class="navbar-link" data-nav-link="">About Us</a>
+                            <a href="index.html" class="navbar-link" data-nav-link="">About Us</a>
                         </li>
 
                         <li>
@@ -123,69 +161,63 @@
                         </li>
 
                         <li>
-                            <a href="#" class="navbar-link" data-nav-link="">Contact</a>
+                            <a href="#footer" class="navbar-link" data-nav-link="">Contact</a>
                         </li>
 
-                    </ul>
-                </nav>
+                        <li>
+                            <a " class="btn active toggleContact" onclick="toggleContact()">Book appointment</a>
 
-                <a href="#" class="btn active toggleContact" onclick="toggleContact()">Book appointment</a>
-
-                <!-- formm -->
-                <div class="contactMenu row">
-                    <div class="contactMenu-content row flex container">
-                        <div>
-                            <h4>Book Your Visit At</h4>
-                            <h4>here</h4>
-                            <form action="">
-                                <div class="form row">
+                            <!-- formm -->
+                            <div class="contactMenu row">
+                                <div class="contactMenu-content row flex container">
                                     <div>
-                                        <label for="">Name</label>
-                                        <input type="text" name="" id="" placeholder="Name">
-                                    </div>
-                                    <div>
-                                        <label for="">Email</label>
-                                        <input type="text" name="" id="" placeholder="Enter Email">
-                                    </div>
-                                    <div>
-                                        <label for="">Phone Number</label>
-                                        <input type="tel" name="" id="" placeholder="Phone Number">
-                                    </div>
-                                    <div>
-                                        <label for="">Select Date</label>
-                                        <input type="date" name="" id="">
-                                    </div>
-                                    <div>
-                                        <label for="">Select Hour</label>
-                                        <select name="" id="">
-                                            <option value="0">10:00 am</option>
-                                            <option value="1">10:30 am</option>
-                                            <option value="2">11:00 am</option>
-                                            <option value="3">12:00 am</option>
-                                            <option value="4">12:30 am</option>
-                                        </select>
+                                        <h4>Book Your Visit At</h4>
+                                        <h4>here: </h4>
+                                        <form id="form" action="">
+                                            <div class="form row">
+                                                <div>
+                                                    <label for="">Name :</label> 
+                                                    <input type="text" name="" id="" placeholder="Name">
+                                                </div>
+                                                <div>
+                                                    <label for="">Email :</label>
+                                                    <input type="text" name="" id="" placeholder="Enter Email"> 
+                                                </div> 
+                                                <div>
+                                                    <label for="">Phone Number :</label>
+                                                    <input type="tel" name="" id="" placeholder="Phone Number">
+                                                </div>
+                                                <div>
+                                                    <label for="">Select Date :</label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <label for="selectHour">Select Hour :</label>
+                                                    <select name="selectHour" id="selectHour">
+                                                    
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn1">Book An Appointment</button>
+                                        </form>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn">Book An Appointment</button>
-                            </form>
-                        </div>
-                    </div>
-                </div> 
-
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
                 <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler="">
                     <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon md hydrated" role="img"></ion-icon>
-                    <ion-icon name="close-sharp" aria-hidden="true" class="close-icon md hydrated"
-                        role="img"></ion-icon>
+                    <ion-icon name="close-sharp" aria-hidden="true" class="close-icon md hydrated" role="img"></ion-icon>
                 </button>
+
+
+
 
             </div>
         </div>
 
     </header>
-
-
-
-
 
     <main>
         <article>
@@ -203,7 +235,7 @@
 
                         <p class="section-subtitle"></p>
 
-                        <h1 class="h1 hero-title">A Burlington Tradition Of Trusted & Caring Dentistry</h1>
+                        <h1 class="h1 hero-title">Burlington Tradition Of Trusted & Caring Dentistry</h1>
 
                         <p class="hero-text">
                             Welcome Weekdays Until 8pm & 6pm Weekends! We Bill Your Insurance Directly.
@@ -425,7 +457,8 @@
           - #DOCTOR
         -->
 
-            <section class="section doctor" aria-label="doctor">
+            <section class="section doctor" aria-label="doctor"
+                style="display: flex; justify-content: center; align-items: center; ">
                 <div class="container">
 
                     <p class="section-subtitle text-center">Our Doctor</p>
@@ -537,91 +570,6 @@
 
                             </div>
                         </li>
-
-                        <!-- <li class="scrollbar-item">
-                            <div class="doctor-card">
-
-                                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                                    <img src="./assets/images/doctor-3.png" width="460" height="500" loading="lazy"
-                                        alt="Vincent Cooper" class="img-cover">
-                                </div>
-
-                                <h3 class="h3">
-                                    <a href="#" class="card-title">Vincent Cooper</a>
-                                </h3>
-
-                                <p class="card-subtitle">Dentist</p>
-
-                                <ul class="card-social-list">
-
-                                    <li>
-                                        <a href="#" class="card-social-link">
-                                            <ion-icon name="logo-facebook" role="img" class="md hydrated"
-                                                aria-label="logo facebook"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="card-social-link">
-                                            <ion-icon name="logo-twitter" role="img" class="md hydrated"
-                                                aria-label="logo twitter"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="card-social-link">
-                                            <ion-icon name="logo-instagram" role="img" class="md hydrated"
-                                                aria-label="logo instagram"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </li> -->
-
-                        <!-- <li class="scrollbar-item">
-                            <div class="doctor-card">
-
-                                <div class="card-banner img-holder" style="--width: 460; --height: 500;">
-                                    <img src="./assets/images/doctor-4.png" width="460" height="500" loading="lazy"
-                                        alt="Danielle Bryant" class="img-cover">
-                                </div>
-
-                                <h3 class="h3">
-                                    <a href="#" class="card-title">Danielle Bryant</a>
-                                </h3>
-
-                                <p class="card-subtitle">Dentist</p>
-
-                                <ul class="card-social-list">
-
-                                    <li>
-                                        <a href="#" class="card-social-link">
-                                            <ion-icon name="logo-facebook" role="img" class="md hydrated"
-                                                aria-label="logo facebook"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="card-social-link">
-                                            <ion-icon name="logo-twitter" role="img" class="md hydrated"
-                                                aria-label="logo twitter"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="card-social-link">
-                                            <ion-icon name="logo-instagram" role="img" class="md hydrated"
-                                                aria-label="logo instagram"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </li> -->
-
                     </ul>
 
                 </div>
@@ -803,7 +751,7 @@
       - #FOOTER
     -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
 
         <div class="footer-top section">
             <div class="container">
@@ -841,7 +789,7 @@
 
                         <span class="span">
                             Monday - Saturday:<br>
-                            9:00am - 10:00Pm
+                            10:00am - 8:00Pm
                         </span>
                     </div>
 
@@ -895,17 +843,17 @@
                     <li>
                         <a href="#" class="footer-link">
                             <ion-icon name="add-outline" role="img" class="md hydrated"
-                            aria-label="add outline"></ion-icon>
-                            
+                                aria-label="add outline"></ion-icon>
+
                             <span class="span">Our Team</span>
                         </a>
                     </li>
-                    
+
                     <li>
                         <a href="#" class="footer-link">
                             <ion-icon name="add-outline" role="img" class="md hydrated"
-                            aria-label="add outline"></ion-icon>
-                            
+                                aria-label="add outline"></ion-icon>
+
                             <span class="span">Latest Blog</span>
                         </a>
                     </li>
@@ -998,7 +946,7 @@
                             5220 Dundas St #6<br>
                             Burlington, ON L7L 0J4
                             <a href="https://www.google.com/maps/place/Orchard+Family+Dentistry/@43.4118749,-79.8012806,15z/data=!4m6!3m5!1s0x882b67be02fcfd19:0x7c49a6904f7372e3!8m2!3d43.4118749!4d-79.8012806!16s%2Fg%2F11h3ddtzby?entry=ttu"
-                                target="_blank"> <img src="images/map.2b7150e7821940b1c5c4.png" width="280px"></a>
+                                target="_blank"> <img class="mt-10" src="images/map.2b7150e7821940b1c5c4.png" width="280px"></a>
 
                         </address>
                     </li>
@@ -1094,6 +1042,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    
 
 
 
