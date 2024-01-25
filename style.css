@@ -464,9 +464,6 @@ header .navbar ul li ul li {
 @media (max-width: 991px) {
   /* Styles for screens up to 991px (typical phone width) */
 
-  .header-bottom.active {
-    
-  }
 
   .navbar {
     top: 100%; /* Move the navbar below the header */
@@ -507,6 +504,37 @@ header .navbar ul li ul li {
     display: block;
   }
 }
+
+.dropdown,
+.dropdown1 {
+  display: none;
+}
+
+/* Show dropdown when the parent link is focused */
+.navbar-link:focus + .dropdown,
+.navbar-link:focus + .dropdown1 {
+  display: block;
+}
+
+/* For touch devices, show dropdown on tap */
+@media (hover: none) {
+  .navbar-link:active + .dropdown,
+  .navbar-link:active + .dropdown1 {
+    display: block;
+  }
+}
+
+/* Additional styles for better touch interaction */
+.navbar-link {
+  touch-action: manipulation; /* Improve touch responsiveness */
+}
+
+/* Styles for active state (remove outline) */
+.navbar-link:active,
+.navbar-link.active {
+  outline: none;
+}
+
 
 
 
