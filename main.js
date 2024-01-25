@@ -88,3 +88,7 @@ for (let i = 9; i <= 17; i++) {
 
 // footer copy right 
 document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Orchard Family Dentistry. All rights reserved.";
+
+// document.addEventListener('contextmenu', function (e) {
+//   e.preventDefault();
+// });
