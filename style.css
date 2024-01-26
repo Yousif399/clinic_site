@@ -454,6 +454,7 @@ header .navbar ul li ul li {
   header {
     padding: 20px;
   }
+  
 
   header .navbar ul li ul {
     position: relative;
@@ -492,48 +493,22 @@ header .navbar ul li ul li {
   }
 
   /* Hide the original dropdown1 */
-  .dropdown1 {
+  /* .dropdown1 {
     display: none;
-  }
+  } */
 
-  .navbar.active li ul.dropdown1 {
-    display: none; /* Hide the original dropdown1 when the navbar is active */
-  }
+  /* .navbar.active li ul.dropdown1 {
+    display: none; 
+  } */
+  /* Hide the original dropdown1 when the navbar is active */
 
   .dropdown1.active {
     display: block;
   }
+  
 }
 
-.dropdown,
-.dropdown1 {
-  display: none;
-}
 
-/* Show dropdown when the parent link is focused */
-.navbar-link:focus + .dropdown,
-.navbar-link:focus + .dropdown1 {
-  display: block;
-}
-
-/* For touch devices, show dropdown on tap */
-@media (hover: none) {
-  .navbar-link:active + .dropdown,
-  .navbar-link:active + .dropdown1 {
-    display: block;
-  }
-}
-
-/* Additional styles for better touch interaction */
-.navbar-link {
-  touch-action: manipulation; /* Improve touch responsiveness */
-}
-
-/* Styles for active state (remove outline) */
-.navbar-link:active,
-.navbar-link.active {
-  outline: none;
-}
 
 
 
@@ -571,12 +546,13 @@ header .navbar ul li ul li {
   padding: 10%;
 }
 
-.toggleContact.c-active::before {
+.toggleContact.c-active::after {
   display: flex;
+  
   content: "";
-  position: fixed;
+  /* position: static;
   top: 5%;
-  right: 5%;
+  right: 15%; */
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpmv835rta3EGlrsagWTAnYiWZDQLrnXX5pQ&usqp=CAU);
   font-size: 24px;
   background-repeat: no-repeat;
@@ -691,6 +667,26 @@ header .navbar ul li ul li {
   -moz-transition: 0.3 ease-in-out;
   -ms-transition: 0.3 ease-in-out;
   -o-transition: 0.3 ease-in-out;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 8; /* Lower than the form, but higher than other elements */
+  display: none; /* Initially hidden */
+}
+
+h3#close-form {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+h3#close-form:hover {
+  color: #4ac7b3;
+  
 }
 
 
