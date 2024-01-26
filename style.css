@@ -1852,3 +1852,12 @@ header .navbar ul li:hover > ul {
   }
   
 } */
+
+
+section {
+  text-align: center;
+}
+
+section.hero, section.cta {
+  text-align: start;
+}
