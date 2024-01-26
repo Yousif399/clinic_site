@@ -502,8 +502,11 @@ header .navbar ul li ul li {
   } */
   /* Hide the original dropdown1 when the navbar is active */
 
-  .dropdown1.active {
-    display: block;
+  
+  
+  .dropdown1 li a {
+    font-size: 10px;
+   
   }
   
 }
