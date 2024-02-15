@@ -82,9 +82,95 @@ for (let i = 9; i <= 17; i++) {
   selectHour.appendChild(option)
 }
 
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // breakpoints: {
+  //   0: {
+  //     slidesPerView: 1,
+  //   },
+  //   520: {
+  //     slidesPerView: 1,
+  //   },
+  //   950: {
+  //     slidesPerView: 3,
+  //   },
+  // },
+});
+
+var swiper = new Swiper(".slide-content1", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next1",
+    prevEl: ".swiper-button-prev1",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 1,
+    },
+    950: {
+      slidesPerView: 2,
+    },
+  },
+});
 
 
 
+
+// read more 
+function toggleMore(button) {
+  const description = button.previousElementSibling
+  const btnMore = document.querySelector(".btn-more")
+  description.classList.toggle("show-more-active")
+  btnMore.classList.toggle("show-less")
+
+  if (btnMore.classList.contains("show-less")) {
+    button.innerText = "Close bio";
+  }
+  else {
+    button.innerText = "View bio"
+  }
+}
+
+function toggleMore1(button) {
+  const description = button.previousElementSibling
+  const btnMore = document.querySelector(".btn-more")
+  description.classList.toggle("show-more-active")
+  btnMore.classList.toggle("show-less")
+
+  if (btnMore.classList.contains("show-less")) {
+    button.innerText = "Close bio";
+  }
+  else {
+    button.innerText = "View bio"
+  }
+}
 
 // footer copy right 
 document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Orchard Family Dentistry. All rights reserved.";
@@ -93,8 +179,3 @@ document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullY
 //   e.preventDefault();
 // });
 
-
-
-
-
-$
