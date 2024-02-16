@@ -61,10 +61,10 @@ window.addEventListener("scroll", function () {
 
 // Togle contact Form
 function toggleContact() {
-    const toggleContact = document.querySelector(".toggleContact")
-    const contactMenu = document.querySelector(".contactMenu")
-    toggleContact.classList.toggle("c-active")
-    contactMenu.classList.toggle("c-active")
+  const toggleContact = document.querySelector(".toggleContact")
+  const contactMenu = document.querySelector(".contactMenu")
+  toggleContact.classList.toggle("c-active")
+  contactMenu.classList.toggle("c-active")
 }
 
 // select hous functions
@@ -73,7 +73,7 @@ for (let i = 9; i <= 17; i++) {
   const amPm = i < 12 ? 'am' : 'pm';
   const hour = i % 12 || 12;
   const optionText = `${hour}:00 ${amPm}`
-  
+
   const selectHour = document.getElementById('selectHour');
 
   const option = document.createElement('option');
@@ -191,6 +191,22 @@ function toggleMore1(button) {
     button.innerText = "View bio"
   }
 }
+
+// Function to show the notification bar with a message for a specified duration
+function showNotification(message, duration) {
+  var notificationBar = document.getElementById("notification-bar");
+  notificationBar.textContent = message;
+  notificationBar.style.display = "flex";
+  setTimeout(function () {
+    notificationBar.style.display = "none";
+
+
+  }, duration);
+}
+
+// Example usage:
+showNotification("Easily accessible. Visitors parking available underground and around the condo complex.", 5000); // Show for 5 seconds
+
 
 // footer copy right 
 document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Orchard Family Dentistry. All rights reserved.";
