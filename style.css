@@ -1470,14 +1470,38 @@ div.swiper-btn::after {
 .logo-on-page {
   /* font-size: 90px; */
   position: fixed;
-  top: 10px;
-  right: 50px;
-  z-index: 1;
-  transform: translateY(95px);
+  bottom: 30px;
+  right: 30px;
+  font-size: 18px;
+  color: var(--white);
+  padding: 14px;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition);
+  z-index: 999;
   visibility: visible;
   opacity: 1;
-
 }
+.back-top-btn.active {
+  transform: translateY(-10px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.hover-go-top {
+  color: var(--oxford-blue-1);
+  background-color: var(--white);
+  position: relative;
+  border-radius: 5px;
+  bottom: 80px;
+  display: none;
+}
+
+.logo-on-page:hover .hover-go-top {
+  display: flex;
+}
+
 
 
 
@@ -2092,7 +2116,9 @@ span.meetus-box-title {
 
 }
 
-.meet-us-box::first-letter {
+.meet-us-box1::first-letter,
+.meet-us-box2::first-letter,
+.meet-us-box3::first-letter {
   text-transform: capitalize;
 
 }
