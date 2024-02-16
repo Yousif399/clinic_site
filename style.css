@@ -2136,8 +2136,8 @@ span.meetus-box-title {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #828554a5; /* Adjust the background color as needed */
-  color: var(--oxford-blue-1); /* Adjust the text color as needed */
+  background-color: var(--oxford-blue-1); /* Adjust the background color as needed */
+  color: var(--carolina-blue); /* Adjust the text color as needed */
   padding: 10px;
   justify-content: center;
   text-align: center;
