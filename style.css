@@ -347,6 +347,31 @@ a.btn.active.toggleContact {
   gap: 20px;
 }
 
+/* Navbar */
+.dropdown-link,
+.dropdown-sublink {
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  transition: background-color .3s;
+}
+
+.dropdown-menu,
+.dropdown-submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease-out;
+}
+
+.dropdown-item:hover .dropdown-menu,
+.dropdown-subitem:hover .dropdown-submenu {
+  max-height: 1000px;
+  transition: max-height .4s ease-in;
+}
+
+
+
 .logo {
   color: var(--oxford-blue-1);
   font-family: var(--ff-poppins);
@@ -406,14 +431,27 @@ a.btn.active.toggleContact {
 .navbar-link {
   font-family: "LTC Goudy Oldstyle W01 Regular";
   src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot");
-  src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot?#iefix")format("embedded-opentype"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.woff")format("woff"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.woff2")format("woff2"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.ttf")format("truetype"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.svg#LTC Goudy Oldstyle W01 Regular")format("svg");
+  src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot?#iefix"),format("embedded-opentype"),
+    url("2e0cce0d9fb077e87cd7053f1591e08f.woff"),format("woff"),
+    url("2e0cce0d9fb077e87cd7053f1591e08f.woff2"),format("woff2"),
+    url("2e0cce0d9fb077e87cd7053f1591e08f.ttf"),format("truetype"),
+    url("2e0cce0d9fb077e87cd7053f1591e08f.svg#LTC Goudy Oldstyle W01 Regular"),format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-link {
+    display: block;
+    margin-bottom: 10px
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .navbar-link:hover {
+    background-color: #e4f3fb;
+  }
 }
 
 /* dropw down menu */
@@ -631,7 +669,7 @@ header .navbar ul li ul li {
 
 .contactMenu-content {
   background-color: rgba(240, 248, 255, 0.866);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.415)44.4%, rgba(255, 255, 255, 0.381) 60.46%), url(https://media.istockphoto.com/id/1299946422/photo/aerial-views-over-top-of-rows-of-orange-trees-in-plantation-in-sunset.jpg?s=612x612&w=0&k=20&c=OW01iA_OSsqAN8MsWBSjsTeHLErIo7te3zctQcltBO4=);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.415) 44.4%, rgba(255, 255, 255, 0.381) 60.46%), url(https://media.istockphoto.com/id/1299946422/photo/aerial-views-over-top-of-rows-of-orange-trees-in-plantation-in-sunset.jpg?s=612x612&w=0&k=20&c=OW01iA_OSsqAN8MsWBSjsTeHLErIo7te3zctQcltBO4=);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -2069,11 +2107,11 @@ img {
   font-style: italic; */
   font-family: "LTC Goudy Oldstyle W01 Regular";
   src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot");
-  src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot?#iefix")format("embedded-opentype"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.woff")format("woff"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.woff2")format("woff2"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.ttf")format("truetype"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.svg#LTC Goudy Oldstyle W01 Regular")format("svg");
+  src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot?#iefix"),format("embedded-opentype"),
+    url("2e0cce0d9fb077e87cd7053f1591e08f.woff"),format("woff"),
+    url("2e0cce0d9fb077e87cd7053f1591e08f.woff2"),format("woff2"),
+    url("2e0cce0d9fb077e87cd7053f1591e08f.ttf"),format("truetype"),
+    url("2e0cce0d9fb077e87cd7053f1591e08f.svg#LTC Goudy Oldstyle W01 Regular"),format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -2156,3 +2194,7 @@ span.meetus-box-title {
     transform: translateY(0);
   }
 }
+
+
+
+
