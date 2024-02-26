@@ -192,7 +192,7 @@
 
                     <div class="hero-content">
 
-                        <h1 class="h2 section-title text-center">A Burlington Tradition Of Trusted & Caring Dentistry
+                        <h1 class="h2 section-title text-center">A A Burlington Tradition Of Trusted & Caring Dentistry
                         </h1>
 
                         <p class="h1 hero-text">Welcome Weekdays Until 8pm & Weekends! We Bill Your Insurance Directly.</p>
@@ -415,9 +415,9 @@
             <section class="section doctor" aria-label="doctor">
                 <div class="container">
 
-                    <p class="section-subtitle text-center">Our Doctor</p>
+                    <p class="section-subtitle text-center"></p>
 
-                    <h2 class="h2 section-title text-center">Best Expert Dentist</h2>
+                    <h2 class="h2 section-title text-center">Our Excellent Dentists</h2>
 
                     <ul class="has-scrollbar">
 
@@ -704,7 +704,7 @@
 
                         <span class="span">
                             Monday - Friday:<br>
-                            10:00am - 8:00Pm
+                            10:00 am - 8:00 pm
                         </span>
                     </div>
 
@@ -715,7 +715,7 @@
 
                         <span class="span">
                             Saturday - Sunday:<br>
-                            10:00am - 6:00Pm
+                            10:00 am - 6:00 pm
                         </span>
                     </div>
 
@@ -998,3 +998,13 @@
                         </li>
                      </ul>
                   </li>
+
+                   <div class="container">
+                    <video class="hero-banner" style="max-width: 320px; justify-content: end; border-radius: 10px; "
+                        controls autoplay>
+                        <source
+                            src="https://player.vimeo.com/external/500731385.sd.mp4?s=2167495d640ec48c23e16a25904ac506a5097d83&profile_id=164&oauth2_token_id=57447761"
+                            width="587" height="839" alt="hero banner" class="w-100" type="video/mp4">
+                    </video>
+
+                </div>

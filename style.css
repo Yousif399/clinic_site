@@ -48,8 +48,8 @@
      * typography
      */
 
-  --ff-roboto: "Roboto", sans-serif;
-  --ff-poppins: "Poppins", sans-serif;
+  --ff-roboto: "LTC Goudy Oldstyle W01 Regular";
+  --ff-poppins: "LTC Goudy Oldstyle W01 Regular";
 
   --fs-1: 4rem;
   --fs-2: 3.6rem;
@@ -104,19 +104,20 @@
     #RESET
   \*-----------------------------------*/
 .libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
+  font-family: "LTC Goudy Oldstyle W01 Regular";
   font-weight: 400;
   font-style: normal;
 }
 
 .libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
+  font-family:"LTC Goudy Oldstyle W01 Regular";
+
   font-weight: 400;
   font-style: italic;
 }
 
 .libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
+  font-family: "LTC Goudy Oldstyle W01 Regular";
   font-weight: 700;
   font-style: normal;
 }
@@ -178,7 +179,7 @@ html {
   font-family: var(--ff-roboto);
   font-size: 10px;
   scroll-behavior: smooth;
-  font-family: "Noto Sans Tai Le", sans-serif;
+  font-family: "LTC Goudy Oldstyle W01 Regular";
   font-weight: 400;
   font-style: normal;
 }
@@ -428,18 +429,7 @@ a.btn.active.toggleContact {
   padding: 15px;
 }
 
-.navbar-link {
-  font-family: "LTC Goudy Oldstyle W01 Regular";
-  src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot");
-  src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot?#iefix"),format("embedded-opentype"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.woff"),format("woff"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.woff2"),format("woff2"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.ttf"),format("truetype"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.svg#LTC Goudy Oldstyle W01 Regular"),format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 @media only screen and (max-width: 600px) {
   .navbar-link {
@@ -669,7 +659,7 @@ header .navbar ul li ul li {
 
 .contactMenu-content {
   background-color: rgba(240, 248, 255, 0.866);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.415) 44.4%, rgba(255, 255, 255, 0.381) 60.46%), url(https://media.istockphoto.com/id/1299946422/photo/aerial-views-over-top-of-rows-of-orange-trees-in-plantation-in-sunset.jpg?s=612x612&w=0&k=20&c=OW01iA_OSsqAN8MsWBSjsTeHLErIo7te3zctQcltBO4=);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.637) 44.4%, rgba(255, 255, 255, 0.672) 60.46%), url(https://media.istockphoto.com/id/1299946422/photo/aerial-views-over-top-of-rows-of-orange-trees-in-plantation-in-sunset.jpg?s=612x612&w=0&k=20&c=OW01iA_OSsqAN8MsWBSjsTeHLErIo7te3zctQcltBO4=);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -794,9 +784,11 @@ h3#close-form:hover {
 }
 
 .hero-text {
-  font-size: var(--fs-6);
+  font-size: var(--fs-5);
   line-height: 1.45;
   margin-block-end: 40px;
+  font-weight: var(--fw-800);
+  color: var(--black);
 }
 
 div.walkin-text {
@@ -809,7 +801,7 @@ div.walkin-text {
   color: var(--oxford-blue-1);
 }
 
-span.logo-logo img {
+a.logo-logo img {
   margin: auto;
 }
 
@@ -1058,17 +1050,20 @@ h1.schedule-text {
 
 .video-container {
   /* max-width: 650px; */
-  width: 100%;
+  width: 80%;
   /* background-color: #60a71e; */
   padding: 40px 0;
 }
 
 .card-image-video {
   position: relative;
-  /* height: 650px; */
+  /* max-height: 250px; */
   /* width: 650px; */
   border-radius: 12px;
 }
+
+
+
 .card-image-video .card-img {
   height: 100%;
   width: 100%;
@@ -1452,9 +1447,10 @@ div.swiper-btn::after {
 }
 
 .copyright {
-  color: var(--white);
+  color: var(--royal-blue-light);
   line-height: 1.6;
   margin-block-end: 25px;
+
 }
 
 .footer .social-list {
@@ -1521,6 +1517,7 @@ div.swiper-btn::after {
   visibility: visible;
   opacity: 1;
 }
+
 .back-top-btn.active {
   transform: translateY(-10px);
   visibility: visible;
@@ -2100,22 +2097,6 @@ img {
 }
 
 
-* {
-
-  /* font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: italic; */
-  font-family: "LTC Goudy Oldstyle W01 Regular";
-  src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot");
-  src: url("2e0cce0d9fb077e87cd7053f1591e08f.eot?#iefix"),format("embedded-opentype"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.woff"),format("woff"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.woff2"),format("woff2"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.ttf"),format("truetype"),
-    url("2e0cce0d9fb077e87cd7053f1591e08f.svg#LTC Goudy Oldstyle W01 Regular"),format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 section {
   text-align: center;
@@ -2153,6 +2134,15 @@ span.meetus-box-title {
   transition: transform 0.5s ease-in-out;
 
 }
+.meet-us-box2-fix {
+  font-size: var(--fs-4);
+  border: 1px solid black;
+  border-radius: 5px;
+  color: var(--oxford-blue-1);
+  box-shadow: 20px 20px 20px;
+  padding: var(--fs-3);
+  transition: transform 0.5s ease-in-out;
+}
 
 .meet-us-box1::first-letter,
 .meet-us-box2::first-letter,
@@ -2163,33 +2153,43 @@ span.meetus-box-title {
 
 .meet-us-box1:hover,
 .meet-us-box2:hover,
-.meet-us-box3:hover {
+.meet-us-box3:hover,
+.meet-us-box2-fix:hover {
   transform: translateX(-5px) translateY(-6px);
 
 }
 
 
+
+
 .notification-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--oxford-blue-1); /* Adjust the background color as needed */
-  color: var(--carolina-blue); /* Adjust the text color as needed */
-  padding: 10px;
-  justify-content: center;
-  text-align: center;
+  font-weight: var(--fw-700);
   font-size: var(--fs-6);
-  display: none; /* Initially hidden */
-  z-index: 9999; /* Ensure it appears above other content */
-  animation: slide-down 0.5s ease forwards;
-  margin-bottom: 200px;
+  color: var(--white);
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  /* width: 100%; */
+  /* background-color: var(--oxford-blue-1); */
+  /* Adjust the background color as needed */
+  /* color: var(--carolina-blue); */
+  /* Adjust the text color as needed */
+  /* padding: 10px; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* font-size: var(--fs-6); */
+  /* display: none; */
+  /* Initially hidden */
+  /* z-index: 9999; */
+  /* Ensure it appears above other content */
+  /* animation: slide-down 0.5s ease forwards; */
 }
 
 @keyframes slide-down {
   0% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -2198,3 +2198,8 @@ span.meetus-box-title {
 
 
 
+
+.navbar-link{
+  font-family: "LTC Goudy Oldstyle W01 Regular";
+ 
+}

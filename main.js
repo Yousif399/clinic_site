@@ -193,27 +193,28 @@ function toggleMore1(button) {
 }
 
 // Function to show the notification bar with a message for a specified duration
-function showNotification(message, duration) {
-  var notificationBar = document.getElementById("notification-bar");
-  notificationBar.textContent = message;
-  notificationBar.style.display = "flex";
-  setTimeout(function () {
-    notificationBar.style.display = "none";
+// function showNotification(message, duration) {
+//   var notificationBar = document.getElementById("notification-bar");
+//   notificationBar.textContent = message;
+//   notificationBar.style.display = "flex";
+//   setTimeout(function () {
+//     notificationBar.style.display = "none";
 
 
-  }, duration);
-}
+//   }, duration);
+// }
 
 // Example usage:
-showNotification("Easily accessible. Visitors parking available underground and around the condo complex.", 5000); // Show for 5 seconds
+// showNotification("Easily accessible. Visitors parking available underground and around the condo complex.", 5000); // Show for 5 seconds
 
 
 // footer copy right 
-document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Orchard Family Dentistry. All rights reserved.";
+document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Dragonnier IT Solutions. All rights reserved.";
 
 // document.addEventListener('contextmenu', function (e) {
 //   e.preventDefault();
 // });
+
 
 
 
