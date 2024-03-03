@@ -605,26 +605,11 @@ header .navbar ul li ul li {
 
 .form.row {
   display: block;
-  margin: 10px;
-  padding: 10%;
+  /* margin: 10px; */
+  /* padding: 10%; */
 }
 
-.toggleContact.c-active::after {
-  display: flex;
 
-  content: "";
-  /* position: static;
-  top: 5%;
-  right: 15%; */
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpmv835rta3EGlrsagWTAnYiWZDQLrnXX5pQ&usqp=CAU);
-  font-size: 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-  width: 20px;
-  height: 20px;
-  z-index: 10;
-}
 
 .contactMenu {
   position: absolute;
@@ -658,12 +643,10 @@ header .navbar ul li ul li {
 }
 
 .contactMenu-content {
-  background-color: rgba(240, 248, 255, 0.866);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.637) 44.4%, rgba(255, 255, 255, 0.672) 60.46%), url(https://media.istockphoto.com/id/1299946422/photo/aerial-views-over-top-of-rows-of-orange-trees-in-plantation-in-sunset.jpg?s=612x612&w=0&k=20&c=OW01iA_OSsqAN8MsWBSjsTeHLErIo7te3zctQcltBO4=);
+  background-color: white;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  padding: 2em;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.6);
   overflow-y: scroll;
   border-radius: 20px;
