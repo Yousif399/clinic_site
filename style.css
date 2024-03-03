@@ -609,6 +609,10 @@ header .navbar ul li ul li {
   /* padding: 10%; */
 }
 
+.iframe {
+  overflow: hidden;
+  background-color: #030c0b;
+}
 
 
 .contactMenu {

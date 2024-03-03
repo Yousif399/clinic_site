@@ -69,18 +69,18 @@ function toggleContact() {
 
 // select hous functions
 
-for (let i = 9; i <= 17; i++) {
-  const amPm = i < 12 ? 'am' : 'pm';
-  const hour = i % 12 || 12;
-  const optionText = `${hour}:00 ${amPm}`
+// for (let i = 9; i <= 17; i++) {
+//   const amPm = i < 12 ? 'am' : 'pm';
+//   const hour = i % 12 || 12;
+//   const optionText = `${hour}:00 ${amPm}`
 
-  const selectHour = document.getElementById('selectHour');
+//   const selectHour = document.getElementById('selectHour');
 
-  const option = document.createElement('option');
-  option.value = i % 5;
-  option.text = optionText
-  selectHour.appendChild(option)
-}
+//   const option = document.createElement('option');
+//   option.value = i % 5;
+//   option.text = optionText
+//   selectHour.appendChild(option)
+// }
 
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 1,
@@ -130,6 +130,7 @@ var swiper = new Swiper(".slide-content-video", {
     prevEl: ".swiper-button-prev",
   },
 });
+
 
 var swiper = new Swiper(".slide-content1", {
   slidesPerView: 2,
@@ -214,7 +215,6 @@ document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullY
 // document.addEventListener('contextmenu', function (e) {
 //   e.preventDefault();
 // });
-
 
 
 
