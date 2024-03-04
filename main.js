@@ -26,9 +26,10 @@ const navbar = document.querySelector("[data-navbar]");
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
 const navbarToggler = document.querySelector("[data-nav-toggler]");
 
-const toggleNav = function () {
+const toggleNav = function (event) {
   navbar.classList.toggle("active");
   navbarToggler.classList.toggle("active");
+
 }
 
 addEventOnElem(navbarToggler, "click", toggleNav);
@@ -38,8 +39,8 @@ const closeNav = function () {
   navbarToggler.classList.remove("active");
 }
 
-addEventOnElem(navbarLinks, "click", closeNav);
-
+// IMPORTANT
+// addEventOnElem(navbarLinks, "click", closeNav);
 
 
 /**
@@ -53,11 +54,140 @@ window.addEventListener("scroll", function () {
   if (window.scrollY >= 100) {
     header.classList.add("active");
     backTopBtn.classList.add("active");
+
   } else {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
   }
 });
+
+
+
+
+const toggleDropDown = function (event) {
+  event.preventDefault();
+  let counter = 0;
+
+  // Get the parent <li> of the clicked link
+  const parentListItem = event.target.closest('li');
+
+  // Find the dropdown within the parent <li>
+  const dropDown = parentListItem.querySelector('.dropdown');
+  const dropDown1 = parentListItem.querySelector('.dropdown1')
+  console.log(dropDown1)
+
+  // Increment the counter
+  counter += 1;
+  if (dropDown) {
+    dropDown.classList.toggle('active');
+  } else {
+    dropDown1.classList.toggle('active');
+  }
+
+  // If counter is 2, update the href attribute of the link
+  if (counter === 2) {
+    dropDown.classList.remove('active')
+    // Find the link within the parent <li>
+    const link = parentListItem.querySelector('.navbar-link');
+    console.log(link.href)
+    link.href = link.href;
+    window.location.href = link.href
+
+  }
+}
+
+
+const handleLinkClick = function (event) {
+  
+
+  const action = event.target.dataset.action;
+
+  if (action === 'dropdown') {
+    toggleDropDown(event)
+  } else if (action === 'navigate') {
+    const href = event.target.getAttribute('href');
+    window.location.href = href;
+
+  }
+
+}
+navbarLinks.forEach(function(navlink) {
+  navlink.addEventListener('click', handleLinkClick)
+})
+
+
+const toggleDropDown1 = function (event) {
+  event.preventDefault();
+
+  let counter = 0;
+
+  // Get the parent <li> of the clicked link
+  const parentListItem = event.target.closest('li');
+
+  // Find the dropdown within the parent <li>
+  const dropDown = parentListItem.querySelector('.dropdown1')
+  console.log(dropDown)
+
+  // Increment the counter
+  counter += 1;
+  dropDown.classList.toggle('active');
+  
+
+  // If counter is 2, update the href attribute of the link
+  if (counter === 2) {
+    dropDown.classList.remove('active')
+    // Find the link within the parent <li>
+    const link = parentListItem.querySelector('.navbar-link');
+    console.log(link.href)
+    link.href = link.href;
+    window.location.href = link.href
+
+  }
+}
+
+
+const handleLinkClick1 = function (event) {
+  
+
+  const action = event.target.dataset.action;
+
+  if (action === 'dropdown1') {
+    toggleDropDown1(event)
+  } else if (action === 'navigate') {
+    const href = event.target.getAttribute('href');
+    window.location.href = href;
+    
+  }
+
+}
+navbarLinks.forEach(function(navlink) {
+  navlink.addEventListener('click', handleLinkClick1)
+})
+
+
+const toggleDropDown3 = function (event) {
+  event.preventDefault();
+ let counter = 0
+
+  // Get the parent <li> of the clicked link
+  const parentListItem = event.target.closest('li');
+
+  // Find the dropdown within the parent <li>
+  const dropDown = parentListItem.querySelector('.dropdown')
+  console.log(dropDown)
+
+  // Increment the counter
+  counter += 1;
+  dropDown.classList.toggle('active');
+  
+
+  // If counter is 2, update the href attribute of the link
+  if (counter === 2) {
+    dropDown.classList.remove('active')
+
+  }
+}
+
 
 // Togle contact Form
 function toggleContact() {

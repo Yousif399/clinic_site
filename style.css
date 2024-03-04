@@ -439,6 +439,7 @@ a.btn.active.toggleContact,
     display: block;
     margin-bottom: 10px
   }
+
 }
 
 @media only screen and (min-width: 601px) {
@@ -2189,4 +2190,14 @@ span.meetus-box-title {
 .navbar-link{
   font-family: "LTC Goudy Oldstyle W01 Regular";
  
+}
+
+@media screen and (max-width:991px) {
+  ul .dropdown li a {
+    display: none;
+  }
+  ul .dropdown.active li a {
+    display: block;
+  }
+
 }
