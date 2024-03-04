@@ -351,9 +351,9 @@ function toggleMore1(button) {
 // footer copy right 
 document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Dragonnier IT Solutions. All rights reserved.";
 
-// document.addEventListener('contextmenu', function (e) {
-//   e.preventDefault();
-// });
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
 
 
 
