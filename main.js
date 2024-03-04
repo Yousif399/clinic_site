@@ -61,12 +61,12 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
+let counter = 0;
+let counter1 = 0;
 
 const toggleDropDown = function (event) {
   event.preventDefault();
-  let counter = 0;
+
 
   // Get the parent <li> of the clicked link
   const parentListItem = event.target.closest('li');
@@ -98,7 +98,7 @@ const toggleDropDown = function (event) {
 
 
 const handleLinkClick = function (event) {
-  
+
 
   const action = event.target.dataset.action;
 
@@ -111,7 +111,7 @@ const handleLinkClick = function (event) {
   }
 
 }
-navbarLinks.forEach(function(navlink) {
+navbarLinks.forEach(function (navlink) {
   navlink.addEventListener('click', handleLinkClick)
 })
 
@@ -119,23 +119,31 @@ navbarLinks.forEach(function(navlink) {
 const toggleDropDown1 = function (event) {
   event.preventDefault();
 
-  let counter = 0;
 
   // Get the parent <li> of the clicked link
   const parentListItem = event.target.closest('li');
 
   // Find the dropdown within the parent <li>
   const dropDown = parentListItem.querySelector('.dropdown1')
-  console.log(dropDown)
+  const dropDown1 = parentListItem.querySelector('.dropdown2')
+
 
   // Increment the counter
-  counter += 1;
-  dropDown.classList.toggle('active');
-  
+  counter1 += 1;
+  if (dropDown) {
+    dropDown.classList.toggle('active');
+  } else {
+    dropDown1.classList.toggle('active');
+  }
+
 
   // If counter is 2, update the href attribute of the link
-  if (counter === 2) {
-    dropDown.classList.remove('active')
+  if (counter1 === 2) {
+    if (dropDown) {
+      dropDown.classList.remove('active')
+    } else {
+      dropDown1.classList.remove('active')
+    }
     // Find the link within the parent <li>
     const link = parentListItem.querySelector('.navbar-link');
     console.log(link.href)
@@ -147,7 +155,7 @@ const toggleDropDown1 = function (event) {
 
 
 const handleLinkClick1 = function (event) {
-  
+
 
   const action = event.target.dataset.action;
 
@@ -156,18 +164,18 @@ const handleLinkClick1 = function (event) {
   } else if (action === 'navigate') {
     const href = event.target.getAttribute('href');
     window.location.href = href;
-    
+
   }
 
 }
-navbarLinks.forEach(function(navlink) {
+navbarLinks.forEach(function (navlink) {
   navlink.addEventListener('click', handleLinkClick1)
 })
 
 
 const toggleDropDown3 = function (event) {
   event.preventDefault();
- let counter = 0
+  let counter = 0
 
   // Get the parent <li> of the clicked link
   const parentListItem = event.target.closest('li');
@@ -179,11 +187,12 @@ const toggleDropDown3 = function (event) {
   // Increment the counter
   counter += 1;
   dropDown.classList.toggle('active');
-  
+
 
   // If counter is 2, update the href attribute of the link
   if (counter === 2) {
     dropDown.classList.remove('active')
+
 
   }
 }
