@@ -222,7 +222,7 @@ function toggleContact() {
 // }
 
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: 1,
+  slidesPerView: 2,
   spaceBetween: 20,
   loop: true,
   centerSlide: "true",
@@ -272,7 +272,7 @@ var swiper = new Swiper(".slide-content-video", {
 
 
 var swiper = new Swiper(".slide-content1", {
-  slidesPerView: 2,
+  slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
   centerSlide: "true",
@@ -287,17 +287,17 @@ var swiper = new Swiper(".slide-content1", {
     nextEl: ".swiper-button-next1",
     prevEl: ".swiper-button-prev1",
   },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 1,
-    },
-    950: {
-      slidesPerView: 2,
-    },
-  },
+  // breakpoints: {
+  //   0: {
+  //     slidesPerView: 1,
+  //   },
+  //   520: {
+  //     slidesPerView: 1,
+  //   },
+  //   950: {
+  //     slidesPerView: 2,
+  //   },
+  // },
 });
 
 
@@ -351,9 +351,9 @@ function toggleMore1(button) {
 // footer copy right 
 document.getElementById("copyright").innerHTML = "&copy; " + new Date().getFullYear() + " Dragonnier IT Solutions. All rights reserved.";
 
-document.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-});
+// document.addEventListener('contextmenu', function (e) {
+//   e.preventDefault();
+// });
 
 
 
