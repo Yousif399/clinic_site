@@ -194,8 +194,14 @@ body {
 
 }
 
+/*------- Capitalize -------*/
 
-
+span {
+  display: inline-block;
+}
+span::first-letter {
+  text-transform: uppercase;
+}
 
 
 /*-----------------------------------*\
@@ -286,6 +292,9 @@ a.btn.active.toggleContact,
 
 .text-center {
   text-align: center;
+}
+.card-text {
+  color: var(--royal-blue-light);
 }
 
 .card-text,
@@ -779,7 +788,7 @@ h3#close-form:hover {
   color: var(--black);
 }
 
-div.walkin-text {
+div.walkin-text{
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -788,6 +797,25 @@ div.walkin-text {
   border-radius: 10px;
   color: var(--oxford-blue-1);
 }
+/* privacy page */
+p.walkin-text  {
+  /* display: flex; */
+  align-items: center;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--oxford-blue-1);
+}
+
+ul.walkin-text  {
+  /* display: flex; */
+  align-items: center;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--oxford-blue-1);
+}
+
 
 a.logo-logo img {
   margin: auto;
@@ -897,8 +925,19 @@ h1.schedule-text {
   margin-block-end: 8px;
 }
 
+x
 
 
+#consentContent .buttons {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-top: 20px;
+}
 
 
 /*-----------------------------------*\
@@ -1144,8 +1183,8 @@ h1.schedule-text {
 
 .card-image {
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  /* width: 250px; */
   border-radius: 12px;
 }
 
