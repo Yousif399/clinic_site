@@ -16,7 +16,10 @@ const addEventOnElem = function (elem, type, callback) {
   }
 }
 
-
+// cookies elemets
+const consentBox = document.getElementById("consentBox");
+const acceptBtn = document.querySelector(".consentButton");
+const rejectBtn = document.querySelector(".rejectButton");
 
 /**
  * navbar toggle
@@ -304,33 +307,56 @@ var swiper = new Swiper(".slide-content1", {
 
 
 // read more 
+let currentOpenBio = null
+
 function toggleMore(button) {
-  const description = button.previousElementSibling
-  const btnMore = document.querySelector(".btn-more")
+  const description = button.previousElementSibling;
+  const btnMore = document.querySelector('.btn-more');
+
+  if (currentOpenBio && currentOpenBio !== description) {
+    currentOpenBio.classList.remove('show-more-active')
+    currentOpenBio.nextElementSibling.innerText = "View bio"
+  }
+
   description.classList.toggle("show-more-active")
   btnMore.classList.toggle("show-less")
 
   if (btnMore.classList.contains("show-less")) {
-    button.innerText = "Close bio";
-  }
-  else {
+    button.innerText = "Close bio"
+  } else {
     button.innerText = "View bio"
   }
-}
 
-function toggleMore1(button) {
-  const description = button.previousElementSibling
-  const btnMore = document.querySelector(".btn-more")
-  description.classList.toggle("show-more-active")
-  btnMore.classList.toggle("show-less")
-
-  if (btnMore.classList.contains("show-less")) {
-    button.innerText = "Close bio";
-  }
-  else {
-    button.innerText = "View bio"
-  }
+  currentOpenBio = description.classList.contains("show-more-active") ? description : null
 }
+// function toggleMore(button) {
+//   const description = button.previousElementSibling
+//   const btnMore = document.querySelector(".btn-more")
+//   description.classList.toggle("show-more-active")
+//   btnMore.classList.toggle("show-less")
+
+//   if (btnMore.classList.contains("show-less")) {
+//     button.innerText = "Close bio";
+//   }
+//   else {
+//     button.innerText = "View bio"
+//   }
+// }
+
+// function toggleMore1(button) {
+//   const description = button.previousElementSibling
+//   const btnMore = document.querySelector(".btn-more")
+//   description.classList.toggle("show-more-active")
+//   btnMore.classList.toggle("show-less")
+
+//   if (btnMore.classList.contains("show-less")) {
+//     button.innerText = "Close bio";
+//   }
+//   else {
+//     button.innerText = "View bio"
+//   }
+// }
+
 
 // Function to show the notification bar with a message for a specified duration
 // function showNotification(message, duration) {
