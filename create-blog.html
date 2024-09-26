@@ -1,0 +1,195 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handle Blogs/Staff</title>
+    <link rel="stylesheet" href="blogs.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html" class="logo"
+      ><img
+        class="logo-img"
+        style="border-radius: 0px; transform: scale(1.4)"
+        src="icons/logo.png"
+        width="68px"
+      />
+      </a>
+      <button class="btn  logout">LogOut</button>
+    </div>
+
+    <section>
+      <h1>Add Blogs</h1>
+      <form class="blog-form" onsubmit="addBlog(event)">
+        <div class="input-wraper">
+          <input type="text" name="title" placeholder="Title" required/>
+          <input type="date" name="date" id="" placeholder="Date of post" required/>
+        </div>
+
+        <input type="url" name="img" id="" placeholder="img url" required/>
+
+        <input type="url" name="blogUrl" id="" placeholder="blog url" required/>
+
+        <textarea for="aboutText" placeholder="Blog short paragraph" required></textarea>
+
+        <button type="submit" class="btn submit-btn"  >
+          Submit
+        </button>
+      </form>
+    </section>
+    <section class="section blog" aria-label="blog" id="blog">
+      <div class="container">
+        <h2 class="h2 section-title text-center">View &amp; Delete Blogs</h2>
+        <ul class="blog-list1">
+          
+        </ul>
+      </div>
+      <div class="loader-wrapper">
+        <div class="loader">
+          <div class="dot" style="--i: 0"></div>
+          <div class="dot" style="--i: 1"></div>
+          <div class="dot" style="--i: 2"></div>
+          <div class="dot" style="--i: 3"></div>
+          <div class="dot" style="--i: 4"></div>
+          <div class="dot" style="--i: 5"></div>
+          <div class="dot" style="--i: 6"></div>
+          <div class="dot" style="--i: 7"></div>
+          <div class="dot" style="--i: 8"></div>
+          <div class="dot" style="--i: 9"></div>
+        </div>
+        <h2 class="loading-text">Loading ...</h2>
+        <div class="loader">
+          <div class="dot" style="--i: 0"></div>
+          <div class="dot" style="--i: 1"></div>
+          <div class="dot" style="--i: 2"></div>
+          <div class="dot" style="--i: 3"></div>
+          <div class="dot" style="--i: 4"></div>
+          <div class="dot" style="--i: 5"></div>
+          <div class="dot" style="--i: 6"></div>
+          <div class="dot" style="--i: 7"></div>
+          <div class="dot" style="--i: 8"></div>
+          <div class="dot" style="--i: 9"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Add Staff</h1>
+      <form enctype="multipart/form-data" class="staff-form" onsubmit="addStaff(event)">
+        <input type="text" name="name" placeholder="Name" required />
+
+        <input type="text" name="jobTitle" id="" placeholder="job title" required />
+
+        <input
+          type="file"
+          name="img"
+          id=""
+          class="staff-img0"
+          placeholder="img"
+          accept="image/*"
+          required
+        />
+
+        <textarea name="aboutMe" id="" placeholder="about me"></textarea>
+
+        <button type="submit" class="btn" >Submit</button>
+      </form>
+      <section class="section staff" aria-label="staff" id="staff">
+        <div class="container">
+          <h2 class="h2 section-title text-center">
+            View &amp; Update &amp; Delete Staff
+          </h2>
+          <ul class="staff-list"></ul>
+        </div>
+        <div class="loader-wrapper2 ">
+          <div class="loader">
+            <div class="dot" style="--i: 0"></div>
+            <div class="dot" style="--i: 1"></div>
+            <div class="dot" style="--i: 2"></div>
+            <div class="dot" style="--i: 3"></div>
+            <div class="dot" style="--i: 4"></div>
+            <div class="dot" style="--i: 5"></div>
+            <div class="dot" style="--i: 6"></div>
+            <div class="dot" style="--i: 7"></div>
+            <div class="dot" style="--i: 8"></div>
+            <div class="dot" style="--i: 9"></div>
+          </div>
+          <h2 class="loading-text">Loading ...</h2>
+          <div class="loader">
+            <div class="dot" style="--i: 0"></div>
+            <div class="dot" style="--i: 1"></div>
+            <div class="dot" style="--i: 2"></div>
+            <div class="dot" style="--i: 3"></div>
+            <div class="dot" style="--i: 4"></div>
+            <div class="dot" style="--i: 5"></div>
+            <div class="dot" style="--i: 6"></div>
+            <div class="dot" style="--i: 7"></div>
+            <div class="dot" style="--i: 8"></div>
+            <div class="dot" style="--i: 9"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- <h1 class="wtf">hello</h1> -->
+
+    <div class="popup-form ">
+      <form
+        method="post"
+        enctype="multipart/form-data"
+        class="staff-form"
+        id="update-staff-form"
+      >
+        <h1>Update Staff</h1>
+        <span class="close"> &times;</span>
+        <input type="text" name="name" placeholder="Name" />
+
+        <input type="text" name="jobTitle" id="" placeholder="job title" />
+
+        <textarea name="aboutMe" id="">about me</textarea>
+
+        <input type="file" name="staff-img" id="" class="staff-img" accept="image/*" />
+
+        <button type="button" class="update-staff btn">Submit</button>
+      </form>
+    
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+
+    <div class="popup-loader " id="loader-container"  >
+      <div class="loader-wrapper active ">
+        <div class="loader">
+          <div class="dot" style="--i: 0"></div>
+          <div class="dot" style="--i: 1"></div>
+          <div class="dot" style="--i: 2"></div>
+          <div class="dot" style="--i: 3"></div>
+          <div class="dot" style="--i: 4"></div>
+          <div class="dot" style="--i: 5"></div>
+          <div class="dot" style="--i: 6"></div>
+          <div class="dot" style="--i: 7"></div>
+          <div class="dot" style="--i: 8"></div>
+          <div class="dot" style="--i: 9"></div>
+        </div>
+        
+        <h2 class="loading-text">Loading ...</h2>
+        <div class="loader">
+          <div class="dot" style="--i: 0"></div>
+          <div class="dot" style="--i: 1"></div>
+          <div class="dot" style="--i: 2"></div>
+          <div class="dot" style="--i: 3"></div>
+          <div class="dot" style="--i: 4"></div>
+          <div class="dot" style="--i: 5"></div>
+          <div class="dot" style="--i: 6"></div>
+          <div class="dot" style="--i: 7"></div>
+          <div class="dot" style="--i: 8"></div>
+          <div class="dot" style="--i: 9"></div>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <script src="backend.js"></script>
+  </body>
+</html>

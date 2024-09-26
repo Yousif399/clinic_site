@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="blogs.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <form onsubmit="checkUser(event)" class="form">
+        <div class="login-container">
+          <h2>LogIn</h2>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="name"
+              class="username"
+              id=""
+              placeholder="Your Name"
+            />
+
+            <input
+              type="password"
+              name="password"
+              class="password"
+              id=""
+              placeholder="Your Password"
+            />
+            <span >
+              <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
+            </span>
+
+            <button class="login-btn" type="submit">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="backend.js"></script>
+    <script src="https://kit.fontawesome.com/3b7973ce0a.js" crossorigin="anonymous"></script>
+  </body>
+</html>
